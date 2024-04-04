@@ -1,0 +1,1 @@
+Guidelines for hotfix branches and ,how you can updgrade from speicf verion to hot fix version
