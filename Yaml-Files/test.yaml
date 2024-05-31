@@ -1,0 +1,50 @@
+
+
+# A Sample yaml file
+# Comments in YAML
+
+
+# Key Value Pair
+app: user-authetication    # string type value , you can use single quote or double quote or without quotes , it works,
+aapname: "my demo \n app"     # some special characters \n etc then use double quote
+port: 443                  # Numeric
+verison: 1.5               # Decimal value
+
+
+
+# objects           you can give two space indentaion for creation objects and its attributes with key value pair
+
+object1:                         # objects
+  attribute1: mydata             # attibutes 
+  attribute2: 500               # attibutes
+  attribute3: true                 # attibutes 
+  attribute4: false 
+ #attribute1: mydata                # Must use unique key name for each
+
+
+# User can use YAML validator online to check the YAML systax.
+
+
+# List             For define list , put -(hyphen) and keep all other member of list to in same indentaion. then it is consider
+#                   list in the YAML             
+
+micoservices1:
+  - app: myapp1
+    appno: 5
+    applocation: useast
+
+
+
+mylist1:                         # list
+  - listitem1: ddd               # listitems 
+    listitem2: data              # list items
+    listitem3: true
+    listitem4: 54545
+    listitem5: sdfafh
+  - sdas
+
+
+
+
+
+
