@@ -1,0 +1,18 @@
+
+
+# A Sample yaml file
+
+company: spacelift
+domain:
+  - devops
+  - devsecops
+
+tutorial:
+  - yaml:
+      name: "YAML Ain't Markup Language"
+      type: awesome
+      born: 2001
+  - json:
+      name: Javascript Object Notation
+      type: great
+      born: 
