@@ -1,0 +1,20 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: nginx
+  lables: 
+    app: nginx
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+        - containerPort: 80
+          volumemounts: abc
+        - name: nginx-vol
+          mountpath: /user/ngnix/html
+    - name: sidecar-container
+      image: any-iamge
+      command: ["data"]
+      args: ["-c", "echo hello from side-container; "]
+

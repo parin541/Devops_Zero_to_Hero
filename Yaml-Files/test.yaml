@@ -27,24 +27,101 @@ object1:                         # objects
 
 # List             For define list , put -(hyphen) and keep all other member of list to in same indentaion. then it is consider
 #                   list in the YAML             
-
-micoservices1:
-  - app: myapp1
-    appno: 5
-    applocation: useast
-
-
-
 mylist1:                         # list
   - listitem1: ddd               # listitems 
     listitem2: data              # list items
     listitem3: true
     listitem4: 54545
     listitem5: sdfafh
-  - sdas
+
+# list of object define as below
+micoservices1:                            # list       # This is List of objects 
+  - app: myapp1                           # first object in the list 
+    no: 5
+    location: useast
+    data: 1 
+  - app: myapp2                          # second object in the list
+    appno: 3
+    no1: 50
+    location2: 454
+    sdff: 50
+  - app: fdsfds                          # Third object in the list
+    bb: fffdsf
+    cc: true
+    dd: 541
+  - aap2: dada                          # forth object in the list
+    n03: fffdsf
+    cc: true
+# You can give same value for each object name but it should have differn value pairs
+     # each object may have different  key value pairs
 
 
+# List of simple values
+
+micoservices2:
+  - data1
+  - data2
+  - data3
+  - data4
+
+# You can use list inside list (Nested List)
+mylist2:
+  - item1: data
+    item2: data2
+    item3: data3
+    item4:
+      - it1: 11
+        it2: 22
+        it3: 33
+    item5: data5
+    item6:
+      - it1: 1
+        it2: 2
+        it3: 3
+    item7: data7
+
+# You can use list inside list  and simple value as list (Nested List)
+mylist3:
+  - item1: data
+    item2: data2
+    item3: data3
+    item4:
+      - it1: 11             # list items
+        it2: 22
+        it3: 33
+    item5:
+      - data                # list of simple values
+      - data2
+      - data3  
+# you can also define  item5: [data, data2, data3]
+    item6: [data, data2, data3]
+
+# you can define multiline string using Pipe | symbol
+# example with simepl key value pair
+
+mymultilinestring: |
+  This is first line in file
+  This is second line in file
+  This is Third line in file and the paragrapth is multiline 
+
+# the symbol '>' conside the multileine string as single line string.
+mysingline: >
+  This is first line in file
+  This is second line in file
+  This is Third line in file and the paragrapth is multiline 
 
 
+# environment variables     # $MYSQL_ROOT_PASSWORD is environment variable
+command:
+  - /bin/sh
+  - -ec
+  - >-
+    mysql -h 127.0.0.1 -u root -p $MYSQL_ROOT_PASSWORD -e 'SELECT 1' 
 
 
+# Place holder
+
+metadata2:
+  name: {{ .Values.service.name }}              # place holder 
+metadata3:
+  app: {{ .Values.service.app }}

@@ -1,0 +1,97 @@
+
+# Simple key value par
+
+key1: value1
+key2: 50
+key3: 50.2
+key4: true
+
+# object and attributes
+obj1data:
+  attr1: data
+  attr2: data2
+  attr3: data3
+  attr4: 40
+  attr5: true
+
+#Nested object (User another onject inside the onject)
+obj1data2:
+  attr1: data
+  attr2: data2
+  attr3: data3
+  attr4: 40
+  attr5: true
+  nestedobj:
+    attr1: abc
+    attr2: pqr
+
+
+# list and its attributes with key value pair       
+# when you define the list you have to use -(hypthen) then only et consoder as the list.
+mylist:
+  - data1: dd
+    data2: 50
+    data3: 50.9
+    data4: true
+    data5: false
+
+# object list 
+mylistobj:
+  - a1: data
+    a2: 50
+    a3: 90.5
+    a4: data5
+  - a1: dd
+    a6: data
+    a7: true
+  - a1: aa
+    a2: dd
+    a4: ddd
+
+# Nested list
+
+mylist2:
+  - myitem1: data
+    myitem2: 3
+    myitem3:
+      - value: 5
+        value2: 10
+        value3: 50.5
+    myitem4: data4
+    myitem5:
+      - value4: 50
+        value10: true
+        subvalue:
+          - data1: mydata
+            data2: data
+        subvalue2: false
+        value11: data
+    myitem6: data
+
+
+  # Nested object and nested list combination
+
+myobj2:                              # object
+  atr1: 4545                         # object items  
+  atr2: true
+  atr3: 7878
+  attr4:                            # nested object
+    a1: 20                          # nested object items
+    a2: 30
+  attr5: data
+  attr6:                           # list
+    - atb: data                    # list items
+      atn: ddd2
+      arn: klk7
+      dd5:                        # object
+        abc: ddta                 # object items
+        adat: dabc                # object items
+    - atnb1: dd
+  attr7: data2 
+
+
+    
+
+  
+
+

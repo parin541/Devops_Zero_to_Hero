@@ -1,0 +1,37 @@
+# You can use (---) to define the multi yaml file
+
+---
+# first YAML file
+mydata:
+  atr1: one 
+  atr2: true
+  atr3: tkk
+  atr4: 
+    - data 
+    - data2
+    - data 3
+
+
+---
+# This is second file
+
+mydata:
+  atr1: one 
+  atr2: true
+  atr3: tkk
+  atr4: 
+    - data: d 
+      data2: true
+      data3: false
+
+---
+# This is Third YAML file
+mydata:
+  - atr1: one 
+    atr2: true
+    atr3: tkk
+    atr4: 
+      - data 
+      - data2
+      - data 3
+

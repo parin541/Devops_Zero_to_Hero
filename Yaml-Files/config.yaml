@@ -1,0 +1,39 @@
+apiversion: 1.0
+image: nginx-container
+metadata: 
+  name: mosquitto-config-file
+data:
+  mosquitto-conf: |
+    log_dest stdout
+    log_type all
+    log_timestamp true
+    lisener 9001
+
+# In above example i have used pipe symbol ( | ) to consider the multiline string, after first line there is new line then it
+# conside the newline as it is
+
+data2:
+  mydata: >
+    this is single line , 
+    this line is continue,
+    This is continueline
+# The symbol > above multiline string as sinle line strig, we can us this sting when we have long string.  
+#                  or
+ 
+  # mydata: "Thiis is single line sting , this is single line string, this is single line string, this is single line string,this is single line string,this is single line string"
+
+command:
+  - sh
+  - -c
+  - |
+    #!  user/bin/env bash -e
+    http () {
+        local path="${1}"
+        set -- -XGET -s --fail
+
+        curl -k "$@" "http://localhost:5601${path}"   
+    }
+    http "app/kibana"
+
+
+
