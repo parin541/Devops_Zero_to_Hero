@@ -1,8 +1,6 @@
 
-
 # A Sample yaml file
 # Comments in YAML
-
 
 # Key Value Pair
 app: user-authetication    # string type value , you can use single quote or double quote or without quotes , it works,
@@ -45,7 +43,7 @@ micoservices1:                            # list       # This is List of objects
     no1: 50
     location2: 454
     sdff: 50
-  - app: fdsfds                          # Third object in the list
+  - app: myapp3                          # Third object in the list
     bb: fffdsf
     cc: true
     dd: 541
@@ -79,6 +77,8 @@ mylist2:
         it2: 2
         it3: 3
     item7: data7
+    item8: ~                               # ~ singn consider as null
+    item9: null                            # null consider as null 
 
 # You can use list inside list  and simple value as list (Nested List)
 mylist3:

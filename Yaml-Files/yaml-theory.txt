@@ -1,0 +1,18 @@
+YAML is data searilization language design to be human friendly 
+ - open interoperatable
+ - & readely understable
+ - Latest vesion in YAML is 1.2
+ - .yaml and .yml extension can be used.
+
+
+ YAML is superset of JSON.
+
+Use of YAML:
+
+  - Configuration
+  - Storing data
+  - Log files
+  - Inter processs and cross language messaging
+  - Define OpenAPI Specification
+  - DevOps Pipeline
+  - Defining kubernetes resouces
