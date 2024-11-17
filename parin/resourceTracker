@@ -1,0 +1,14 @@
+******************** Print List of S3 buckets ******************** 
+2023-12-28 23:57:07 parin
+******************** Print List of EC2 instances ******************** 
+"i-0ca55787de6f713f0"
+"i-0a07c6aa6caf36b27"
+"i-04cccc6abb2bf2f92"
+******************** Print List of AWS Lambda functions ********************
+{
+    "Functions": []
+}
+******************** Print List of IAM Users **********************
+{
+    "Users": []
+}
